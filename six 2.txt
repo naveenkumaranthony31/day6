@@ -1,0 +1,64 @@
+ 
+1) Write a code to print the numbers in the array
+ Output: 1234567891011
+ 
+ var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+ var new_string = “”;
+ console.log(new_string);
+
+2) Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+  Output: 11 10 9 8 7 6 5 4 3 2 1
+   
+  
+ 
+  var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+   new_string = “”;
+   for(i >11 ; i< 1 ; i--){
+    new_string += numsArr[i] + " " ;
+   }
+  console.log(new_string);
+
+3) Write a code to add all the numbers in the array
+  Output: 66 
+
+  var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+   var sum=0;
+  for (var i = 0; i <=10; i++) {
+   sum += numsArr[i]
+  }
+   console.log(sum);
+
+4) Write a code to add the even numbers only
+  Output: 30
+
+  var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+   var sum=[];
+
+   for (var i = 0; i <numsArr.length; i++) {
+ 
+   if(numsArr[i]%2==0){
+
+ 
+   sum.push(numsArr[i]);
+
+  }
+  }
+   
+  var sum2=0;
+  
+  for (var i = 0; i <sum.length; i++) {
+   
+   sum2 += sum[i]
+  }
+   
+   console.log(sum2);
+
+5) Write a code to print elements in the inner arrays
+   Output: 1234567891011
+  let arr1=[1,2,3,4,5,6];
+
+  let arr2=[7,8,9,10,11,];
+  
+let arr3=[...arr1,...arr2]
+console.log(arr3)
